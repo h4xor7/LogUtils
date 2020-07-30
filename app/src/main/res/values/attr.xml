@@ -9,7 +9,6 @@
         <attr name="colorOfQuantity" format="color" />-->
         <attr name="colorOfText" format="color" />
         <attr name="moduleName" format="string"/>
-
     </declare-styleable>
 
 </resources>

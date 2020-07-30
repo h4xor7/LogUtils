@@ -1,4 +1,4 @@
-package com.pandey.saurabh.loglibrary;
+package com.pandey.saurabh.logutils;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -7,13 +7,13 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
-public  class RelatedView extends FrameLayout {
+public class RelatedView extends FrameLayout {
+
     private TextView valueText;
     private ImageView link;
 
@@ -48,8 +48,8 @@ public  class RelatedView extends FrameLayout {
 
     private void init() {
 
-       inflate(getContext(),R.layout.test_layout,this);
-       valueText = findViewById(R.id.testTextView);
+        inflate(getContext(), R.layout.test_main_layout, this);
+        valueText = findViewById(R.id.testTextView);
         link = findViewById(R.id.testImageView);
 
         setLinkClickListener(onLinkClickEventListener);
@@ -112,6 +112,5 @@ public  class RelatedView extends FrameLayout {
 
         valueText.setText(text);
     }
-
 
 }
